@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Ejercicio1 from './Ejercicio1';
+import Ejercicio2 from './Ejercicio2';
+import Ejercicio3 from './Ejercicio3';
+import Ejercicio4 from './Ejercicio4';
+import Ejercicio5 from './Ejercicio5';
+import Ejercicios from './ejercicios';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Ejercicios />} />
+        <Route path="/ejercicios" element={<Ejercicios />} />
+        <Route path="/ejercicios/1" element={<Ejercicio1 />} />
+        <Route path="/ejercicios/2" element={<Ejercicio2 />} />
+        <Route path="/ejercicios/3" element={<Ejercicio3 />} />
+        <Route path="/ejercicios/4" element={<Ejercicio4 />} />
+        <Route path="/ejercicios/5" element={<Ejercicio5 />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
