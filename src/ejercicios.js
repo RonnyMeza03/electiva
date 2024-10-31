@@ -4,10 +4,14 @@ import { Link } from "react-router-dom";
 const Ejercicios = () => {
   return (
     <div>
+        
       <p>
         Resolver los siguientes ejercicios usando JavaScript en entorno React.
       </p>
       <ul>
+        <li>
+            <h1>Nombres: Ronny Meza, Juan Miranda</h1>
+        </li>
         <li>
           <Link to="/ejercicios/1">
             1. Modifica el código del contador básico para que, además de
